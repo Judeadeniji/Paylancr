@@ -1,6 +1,6 @@
 import {
   defineConfig,
-  presetAttributify,
+  // presetAttributify,
   presetIcons,
   presetTypography,
   presetUno,
@@ -16,12 +16,13 @@ export default defineConfig({
   ],
   presets: [
     presetUno(),
-    presetAttributify(),
+    // presetAttributify(),
     presetIcons({
       scale: 1.2,
     }),
     presetTypography(),
     presetWebFonts({
+      provider: 'none',
       fonts: {
         sans: 'DM Sans',
         serif: 'DM Serif Display',

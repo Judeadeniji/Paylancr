@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Logos mb-6 />
+    <Logos class="mb-6" />
     <Suspense>
       <PageView />
       <template #fallback>
-        <div op50 italic>
-          <span animate-pulse>Loading...</span>
+        <div class="op50 italic">
+          <span class="animate-pulse">Loading...</span>
         </div>
       </template>
     </Suspense>
