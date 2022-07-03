@@ -1,5 +1,9 @@
 {
-  "extends": "@antfu",
+  "extends": [
+    "@antfu/eslint-config-vue",
+    // add prettier
+    "plugin:prettier-vue/recommended"
+  ],
   "rules": {
     "@typescript-eslint/semi": ["error", "always"]
   }

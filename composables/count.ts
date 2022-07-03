@@ -4,6 +4,7 @@ export function useCount() {
   function inc() {
     count.value += 1;
   }
+
   function dec() {
     count.value -= 1;
   }
