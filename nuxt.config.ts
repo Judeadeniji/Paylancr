@@ -1,18 +1,14 @@
 import { defineNuxtConfig } from 'nuxt';
 
 export default defineNuxtConfig({
-  modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@pinia/nuxt',
-    '@nuxtjs/color-mode',
-  ],
+  modules: ['@vueuse/nuxt', '@pinia/nuxt', '@nuxtjs/color-mode'],
+  buildModules: ['nuxt-windicss', '@unocss/nuxt'],
   experimental: {
     reactivityTransform: true,
     viteNode: false,
   },
   unocss: {
-    preflight: true,
+    preflight: false,
   },
   colorMode: {
     classSuffix: '',

@@ -26,6 +26,11 @@ body,
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+}
+
 html.dark {
   background: #222;
   color: white;

@@ -15,18 +15,13 @@ definePageMeta({
 <template>
   <div>
     <div
-      class="i-twemoji:waving-hand text-4xl inline-block
-      animate-shake-x animate-duration-5000"
+      class="i-twemoji:waving-hand text-4xl inline-block animate-shake-x animate-duration-5000"
     />
-    <h3 class="text-2xl font-500">
-      Hi,
-    </h3>
-    <div class="text-xl">
-      {{ name }}!
-    </div>
+    <h3 class="text-2xl font-500">Hi,</h3>
+    <div class="text-xl">{{ name }}!</div>
 
     <template v-if="user.otherNames.length">
-      <p class="text-sm my-4">
+      <div class="text-sm my-4">
         <span class="op-50">Also as known as:</span>
         <ul>
           <li v-for="otherName in user.otherNames" :key="otherName">
@@ -35,18 +30,13 @@ definePageMeta({
             </router-link>
           </li>
         </ul>
-      </p>
+      </div>
     </template>
 
     <Counter />
 
     <div>
-      <NuxtLink
-        class="btn m-3 text-sm"
-        to="/"
-      >
-        Back
-      </NuxtLink>
+      <NuxtLink class="btn m-3 text-sm" to="/"> Back </NuxtLink>
     </div>
   </div>
 </template>
